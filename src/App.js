@@ -10,6 +10,7 @@ export const App = () => {
   const [deadline, setDeadline] = useState("");
   const [isUpdate, SetIsUpdate] = useState(false);
 
+
   const [list, setList] = useState([
     { title: "Redux", description: "Learn redux", deadline: "12.10.2020" },
   ]);
@@ -25,6 +26,7 @@ export const App = () => {
       setDescription(value);
     }
   };
+  
 
   const addTask = (e) => {
     e.preventDefault();
@@ -45,6 +47,7 @@ export const App = () => {
     setTitle('');
     setDescription('');
     setDeadline('');
+    SetIsUpdate(false);
   };
   
 
